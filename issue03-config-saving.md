@@ -7,4 +7,4 @@ copy running-config startup-config
 
 - Just after installation, when I save the configuration at first time, it works normally.
 - But from the second initiation of the above command, CLI prompt does not show up for quite long time, for example, more than 10 minutes.
-- During that period, if I ssh on another terminal, I can access the switch normally.
+- During that period, if I ssh to the switch on another terminal, I can access the switch normally.

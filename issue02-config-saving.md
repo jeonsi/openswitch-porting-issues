@@ -2,11 +2,6 @@
 - After I executed "copy running-config startup-config, there is no configuration saved.
 
   ```
-  switch# show running-config
-  Current configuration:
-  !
-  !
-  !
   switch# conf t
   switch(config)# interface mgmt
   switch(config-if-mgmt)# ip static 10.10.10.2/24

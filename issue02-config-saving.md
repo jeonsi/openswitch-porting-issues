@@ -530,60 +530,12 @@ Startup configuration:
         }
     },
     "Port": {
-        "1": {
-            "admin": [
-                "up"
-            ],
-            "interfaces": [
-                "1"
-            ],
-            "ip4_address": [
-                "192.168.10.101/24"
-            ],
-            "name": "1"
-        },
-        "2": {
-            "interfaces": [
-                "2"
-            ],
-            "name": "2",
-            "trunks": [
-                200
-            ],
-            "vlan_mode": [
-                "trunk"
-            ]
-        },
-        "3": {
-            "admin": [
-                "up"
-            ],
-            "interfaces": [
-                "3"
-            ],
-            "name": "3"
-        },
         "bridge_normal": {
             "interfaces": [
                 "bridge_normal"
             ],
             "name": "bridge_normal"
         },
-        "vlan200": {
-            "admin": [
-                "up"
-            ],
-            "interfaces": [
-                "vlan200"
-            ],
-            "ip4_address": [
-                "192.168.20.101/24"
-            ],
-            "name": "vlan200",
-            "tag": [
-                200
-            ]
-        }
     },
     "System": {
         "aaa": {
@@ -599,7 +551,6 @@ Startup configuration:
                 "name": "bridge_normal",
                 "ports": [
                     "bridge_normal",
-                    "vlan200",
                     "2"
                 ],
                 "vlans": {
@@ -616,41 +567,22 @@ Startup configuration:
                         ],
                         "id": 1025,
                         "name": "VLAN1025"
-                    },
-                    "VLAN200": {
-                        "admin": [
-                            "up"
-                        ],
-                        "id": 200,
-                        "name": "VLAN200"
                     }
                 }
             }
         },
         "hostname": "",
         "mgmt_intf": {
-            "default_gateway": "10.64.62.1",
-            "dns_server_1": "10.22.64.6",
-            "dns_server_2": "10.22.64.7",
-            "ip": "10.64.62.121",
+            "default_gateway": "10.10.10.1",
+            "ip": "10.10.10.2",
             "mode": "static",
             "name": "eth0",
             "subnet_mask": "24"
         },
         "vrfs": {
-            "vrf_default": {
-                "Neighbor": {
-                    "192.168.20.1": {
-                        "port": [
-                            "vlan200"
-                        ]
-                    }
-                },
+            "vrf_default":
                 "name": "vrf_default",
                 "ports": [
-                    "vlan200",
-                    "3",
-                    "1"
                 ]
             }
         }

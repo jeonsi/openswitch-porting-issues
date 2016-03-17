@@ -44,7 +44,7 @@
   !
   switch#
   ```
-- If I do it with x86-64 docker image of the save version 0.2.1, it works as expected
+- If I do it with x86-64 docker image of the same version 0.2.1, it works as expected
 
   ```
   switch# conf t

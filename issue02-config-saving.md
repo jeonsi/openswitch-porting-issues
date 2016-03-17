@@ -590,3 +590,55 @@ Startup configuration:
 }
 switch#
 ```
+- After rebooting the switch, I can't connect the swich remotely.
+- from the console:
+  - no running configuration
+  - "show startup-config" gives strange errors.
+  - "show startup-config json" gives the same contents before rebooting
+```
+ops-as5712# sh run
+Current configuration:
+!
+!
+!
+ops-as5712# show startup-config
+Startup configuration:
+Traceback (most recent call last):
+  File "/usr/bin/cfgdbutil", line 9, in <module>
+    load_entry_point('ops-cfgd==1.0', 'console_scripts', 'cfgdbutil')()
+  File "/usr/lib/python2.7/site-packages/cfgdbutil.py", line 258, in main
+    if func(args) is False:
+  File "/usr/lib/python2.7/site-packages/cfgdbutil.py", line 73, in show_config
+    run_config_util.write_config_to_db(parsed)
+  File "/usr/lib/python2.7/site-packages/runconfig/runconfig.py", line 48, in write_config_to_db
+    self.idl, data)
+  File "/usr/lib/python2.7/site-packages/runconfig/declarativeconfig.py", line 635, in write_config_to_db
+    validator_adapter, errors)
+  File "/usr/lib/python2.7/site-packages/runconfig/declarativeconfig.py", line 477, in setup_table
+    schema, idl, validator_adapter, errors)
+  File "/usr/lib/python2.7/site-packages/runconfig/declarativeconfig.py", line 344, in setup_row
+    current_row)
+  File "/usr/lib/python2.7/site-packages/runconfig/declarativeconfig.py", line 382, in setup_row
+    errors)
+  File "/usr/lib/python2.7/site-packages/runconfig/declarativeconfig.py", line 199, in setup_row
+    idl.tables[table])
+  File "/usr/lib/python2.7/site-packages/opsrest/utils/utils.py", line 521, in index_to_row
+    elif str(row.__getattr__(index)) != value:
+  File "/usr/lib/python2.7/site-packages/ovs/db/idl.py", line 553, in __getattr__
+    (self.__class__.__name__, column_name))
+AttributeError: Row instance has no attribute 'ip_address'
+!
+!
+!
+ops-as5712#
+```
+- If I try to configure, it's impossible:
+
+```
+ops-as5712# conf t
+ops-as5712(config)# int mgmt
+ops-as5712(config-if-mgmt)# ip static 10.10.10.2/24
+% Command failed.
+ops-as5712(config-if-mgmt)#
+```
+- I can't configure nothing!!!

@@ -642,3 +642,5 @@ ops-as5712(config-if-mgmt)# ip static 10.10.10.2/24
 ops-as5712(config-if-mgmt)#
 ```
 - I can't configure nothing!!!
+- configuration is stored somewhere as json format file, but it is not actually get used.
+- Configuration DB is corrupted, and make the system unconfigurable.

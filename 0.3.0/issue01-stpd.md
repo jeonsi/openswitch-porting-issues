@@ -20,3 +20,8 @@ Mar 15 05:30:24 ops-as5712 ip[338]: exec of "/usr/bin/ops-stpd" failed: No such 
 root@switch:~# ls -l /usr/bin/ops-stpd
 ls: cannot access /usr/bin/ops-stpd: No such file or directory
 ```
+
+# Analysis
+- stpd is in developing stage.
+- In version 0.2.1, there is no ops-stpd.service file in /etc/systemd/system/multi-user.target.wants/
+- In version 0.3.0, there is ops-stpd.service file in /etc/systemd/system/multi-user.target.wants/, but there is no ops-stpd packaged because it is in developing stage!

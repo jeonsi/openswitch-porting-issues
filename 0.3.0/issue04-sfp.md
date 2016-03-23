@@ -28,3 +28,6 @@ Interface 34:
 - I don't think the SFP+ module problematic. The same SFP+ module is recognized when inserted in the other ports.
 - I don't think the port itself is problematic, either. Because when I was using Cumulus, I've never experienced such problems.
   For the exact probe, I should install Cumulus again, but it's very time consuming.
+
+# Workaround
+- Do not use port 10 and 34.

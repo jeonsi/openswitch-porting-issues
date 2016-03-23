@@ -7,3 +7,7 @@
 # some front panel leds are always turned on, even though there is no optic module inserted.
 - Led marked number 36 is always turned on as amber color.
 - Led marked number 53-4 is always turned on as green color.
+
+# Workaround
+- It's cosmetic error.
+- Ports works OK. Ignore the LED order.

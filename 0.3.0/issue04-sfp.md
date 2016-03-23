@@ -1,5 +1,5 @@
 # SFP+ module on some port is not recognized
-- If I insert an SFP+ into port 9 and 34, the SFP+ module is not recognized.
+- If I insert an SFP+ into port 10 and 34, the SFP+ module is not recognized.
 - normal case
 ```
 switch# show int 1 transceiver
@@ -15,8 +15,8 @@ Interface 1:
 ```
 - abnormal case
 ```
-switch# show int 9 transceiver
-Interface 9:
+switch# show int 10 transceiver
+Interface 10:
  Connector: SFP+
  Transceiver module: not present
 

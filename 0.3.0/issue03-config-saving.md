@@ -14,3 +14,8 @@ copy running-config startup-config
 - The configuration is saved in the file: /var/local/openvswitch/config.db
 - This file grows abnormally large.
 - Because it is too large, it make problem reading or writing the file.
+
+# Workaround
+- Delete the file: /var/local/openvswitch/config.db, and reboot.
+- Reconfigure
+- Don't save the configuration

@@ -1,3 +1,5 @@
+https://tree.taiga.io/project/openswitch/issues?q=676
+
 # When I save the configuration as below, it hangs.
 
 ```

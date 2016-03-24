@@ -1,3 +1,5 @@
+https://tree.taiga.io/project/openswitch/issue/676
+
 # "copy running-config startup-config" not working
 - After I executed "copy running-config startup-config, there is no configuration saved.
 

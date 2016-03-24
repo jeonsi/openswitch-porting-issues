@@ -1,3 +1,5 @@
+https://tree.taiga.io/project/openswitch/issue/675
+
 # SFP+ module on some port is not recognized
 - If I insert an SFP+ into port 10 and 34, the SFP+ module is not recognized.
 - normal case

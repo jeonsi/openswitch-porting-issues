@@ -39,7 +39,5 @@ openswitch 아래 이슈와 관련하여 원인파악이 되었고 조만간 sou
 참고)
 해당 파일 source repository: ops-hw-config
 https://github.com/open-switch/ops-hw-config/blob/master/Accton/AS5712-54X/ports.yaml
-
-정확히 어느 line인지 확인하고 좀 더 빨리 시험해 보기 위해 아래 edge-core 개발자에게 해당 파일을 저에게도 좀 보내달라고 요청 해 놓은 상태입니다.
 ```
 - https://github.com/open-switch/ops-hw-config/commit/2674a53198a92f89f8ec04f99e1dd6858463eebe

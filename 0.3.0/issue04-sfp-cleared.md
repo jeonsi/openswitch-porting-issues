@@ -1,3 +1,5 @@
+https://tree.taiga.io/project/openswitch/issue/676
+
 # SFP+ module on some port is not recognized and it is alwasy admin-down even if configured with "no shutdown".
 - If I insert an SFP+ into port 10 and 34, the SFP+ module is not recognized.
 - normal case

@@ -1,3 +1,5 @@
+https://tree.taiga.io/project/openswitch/issue/727
+
 # front panel led mismatch
 - When I link up port 1, there is no led turned on.
 - When I link up port 2, led marked number 1 is turned on.

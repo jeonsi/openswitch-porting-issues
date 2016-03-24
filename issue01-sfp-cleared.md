@@ -29,7 +29,7 @@ Interface 34:
 - I don't think the SFP+ module problematic. The same SFP+ module is recognized when inserted in the other ports.
 
 # Solution
-- root cause: /etc/openswitch/platform/Accton/AS5712-54X/ports.yaml 파일 버그
+- root cause: /etc/openswitch/platform/Accton/AS5712-54X/ports.yaml bug
 - source repository: ops-hw-config
 - https://github.com/open-switch/ops-hw-config/blob/master/Accton/AS5712-54X/ports.yaml
 - commit: https://github.com/open-switch/ops-hw-config/commit/2674a53198a92f89f8ec04f99e1dd6858463eebe

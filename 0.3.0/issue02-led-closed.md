@@ -15,3 +15,5 @@ https://tree.taiga.io/project/openswitch/issue/728
 # Workaround
 - It's cosmetic error.
 - Ports works OK. Ignore the LED order.
+
+# release 0.3.0 에서 모두 해결 됨

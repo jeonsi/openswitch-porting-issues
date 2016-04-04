@@ -25,3 +25,6 @@ ls: cannot access /usr/bin/ops-stpd: No such file or directory
 - stpd is in developing stage.
 - In version 0.2.1, there is no ops-stpd.service file in /etc/systemd/system/multi-user.target.wants/
 - In version 0.3.0, there is ops-stpd.service file in /etc/systemd/system/multi-user.target.wants/, but there is no ops-stpd packaged because it is in developing stage!
+
+# Disable ops-stpd service until it actually works
+- https://github.com/open-switch/ops-build/commit/315e622fec87a3b3d12ba6843183419996e399f2

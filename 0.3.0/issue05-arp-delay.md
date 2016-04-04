@@ -1,5 +1,7 @@
 # ARP resolution is delayed for 30 seconds
 
+- https://tree.taiga.io/project/openswitch/issue/771
+
 ```
 Before the problem:
 =================

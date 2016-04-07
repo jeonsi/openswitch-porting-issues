@@ -17,7 +17,11 @@ copy running-config startup-config
 - This file grows abnormally large.
 - Because it is too large, it make problem reading or writing the file.
 
-# Workaround
+# Fix the corrupted configuration file
 - Delete the file: /var/local/openvswitch/config.db, and reboot.
 - Reconfigure
 - Don't save the configuration
+
+# Disable bufmond.service
+- systemctl disable bufmond
+

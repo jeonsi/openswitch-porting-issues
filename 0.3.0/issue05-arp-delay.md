@@ -60,3 +60,12 @@ ARP IPv4 Entries:
 IPv4 Address     MAC                Port             State
 192.168.10.1     a4:4c:11:6c:80:3f  1                reachable
 ```
+
+# Solved
+It's not the bug of OpenSwitch.
+It the side effect of peering switch, which has stp portfast feature disabled.
+The following configuration on peer switch will solve the problem.
+
+```
+spanning-tree portfast trunk
+```
